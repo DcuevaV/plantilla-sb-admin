@@ -1,0 +1,76 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Clientes'" [icon]="'fa-users'"></app-page-header>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form role="form">
+                <div class="form-group">
+                        <label>Tipo de Documento</label>
+                        <select class="form-control">
+                            <option value="1">DNI</option>
+                            <option value ="2">RUC</option>
+                        </select>
+                </div>
+                <fieldset class="form-group">
+                    <label>Número de Documento</label>
+                    <input class="form-control">
+                </fieldset>
+                
+                <button type="submit" class="btn btn-primary">Buscar</button>
+
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+            <h4>Datos del Cliente</h4>
+            <div class="card bg-light mb-3">
+                <div class="card-header">Gustavo Mora</div>
+                <div class="card-body">
+                    <h4 class="card-title  text-danger">Activo</h4>
+                    <p class="card-text">Código SBS : 008413134</p>
+                    <p class="card-text">Clasificación SBS: 99</p>
+                    <p class="card-text">Clasificacion BCP: 100</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">Motivos</div>
+                <table class="card-body table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Estado</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

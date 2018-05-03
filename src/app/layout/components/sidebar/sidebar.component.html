@@ -45,8 +45,13 @@
         <a class="list-group-item more-themes" href="http://www.strapui.com/" >
             {{ 'More Theme' | translate }}
         </a>
+
+        <a [routerLink]="['/clientes']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-users"></i>&nbsp;Clientes
+        </a>
+
         <div class="header-fields">
-            <a (click)="rltAndLtr()" class="list-group-item">
+            <!--a (click)="rltAndLtr()" class="list-group-item">
                 <span><i class="fa fa-arrows-h"></i>&nbsp; RTL/LTR</span>
             </a>
             <div class="nested-menu">
@@ -92,10 +97,10 @@
                         </li>
                     </ul>
                 </li>
-            </div>
+            </div-->
             <div class="nested-menu">
                 <a class="list-group-item" (click)="addExpandClass('profile')">
-                    <span><i class="fa fa-user"></i>&nbsp; John Smith</span>
+                    <span><i class="fa fa-user"></i>&nbsp; Gustavo Mora</span>
                 </a>
                 <li class="nested" [class.expand]="showMenu === 'profile'">
                     <ul class="submenu">
