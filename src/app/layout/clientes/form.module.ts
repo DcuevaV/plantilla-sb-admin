@@ -5,8 +5,13 @@ import { FormRoutingModule } from './form-routing.module';
 import { FormComponent } from './form.component';
 import { PageHeaderModule } from './../../shared';
 
+import { ApiService } from '../../service/app.service';
+import { ArchiveBusiness } from '../../service/app.archive.business';
+
 @NgModule({
     imports: [CommonModule, FormRoutingModule, PageHeaderModule],
-    declarations: [FormComponent]
+    declarations: [FormComponent],
+    providers: [ArchiveBusiness,ApiService]
+
 })
 export class FormModule {}
