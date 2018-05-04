@@ -22,7 +22,7 @@ export class ApiService {
 
   public getAllTodos(): Observable<Archive[]> {
     return this.http
-      .get(API_URL + '/all')
+      .get(API_URL + '/getAll')
       .catch(this.handleError);
   }
 
